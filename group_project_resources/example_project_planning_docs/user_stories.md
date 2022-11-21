@@ -5,70 +5,53 @@
 ### Sign Up
 
 * As an unregistered and unauthorized user, I want to be able to sign up for the website via a sign-up form.
-  * When I'm on the `/signup` page:
-    * I would like to be able to enter my email, username, and preferred password on a clearly laid out form.
-    * I would like the website to log me in upon successful completion of the sign-up form.
-      * So that I can seamlessly access the site's functionality
-  * When I enter invalid data on the sign-up form:
-    * I would like the website to inform me of the validations I failed to pass, and repopulate the form with my valid entries (except my password).
-    * So that I can try again without needing to refill forms I entered valid data into.
 
 ### Log in
 
-* As a registered and unauthorized user, I want to be able to log in to the website via a log-in form.
-  * When I'm on the `/login` page:
-    * I would like to be able to enter my email and password on a clearly laid out form.
-    * I would like the website to log me in upon successful completion of the lob-up form.
-      * So that I can seamlessly access the site's functionality
-  * When I enter invalid data on the log-up form:
-    * I would like the website to inform me of the validations I failed to pass, and repopulate the form with my valid entries (except my password).
-      * So that I can try again without needing to refill forms I entered valid data into.
+* As a registered user, I want to be able to log in to the website via a log-in form with the credentials i signed up with.
+
 
 ### Demo User
 
-* As an unregistered and unauthorized user, I would like an easy to find and clear button on both the `/signup` and `/login` pages to allow me to visit the site as a guest without signing up or logging in.
-  * When I'm on either the `/signup` or `/login` pages:
-    * I can click on a Demo User button to log me in and allow me access as a normal user.
-      * So that I can test the site's features and functionality without needing to stop and enter credentials.
+* As someone without an account just looking to try out the site, I'd like to be able to log in quickly via a clearly marked "demo user" button on an ever-present navbar
 
 ### Log Out
 
-* As a logged in user, I want to log out via an easy to find log out button on the navigation bar.
-  * While on any page of the site:
-    * I can log out of my account and be redirected to a page displaying recent FauxTweets.
-      * So that I can easily log out to keep my information secure.
+* As a logged in user, I'd like to be able to log out in order to prevent access to my account by anyone that may have access to my machine
 
-## FauxTweets
 
-### Create FauxTweets
+## Ingredients
 
-* As a logged in user, I want to be able to post new FauxTweets.
-  * When I'm on the `/new-fauxtweet` page:
-    * I can write and submit a new FauxTweet.
-      * So that I can share my thoughts and memes with my friends.
+* As a user with lots of recipes, I'd like to be able to create a list of ingredients for a particular dish via a form 
+    * the form should have however many fields I like, one for each ingredient I have in mind
+    * the form should have a submit button available after the final field
+    * each ingredient field should provide me with a variety of options
+        * I should be able to specify whether I want to record the measurements by volume or mass
+        * I should have a variety of units at my disposal
+        * volume
+            * tsp
+            * tbsp
+            * ml
+            * L
+        * mass
+            * g
+            * kg
 
-### Viewing FauxTweets
+* As a user trying to remember the ingredients for a particular dish, I'd like to be able to view them
+    * I should be able to scale the entire recipe based on the quantity of a particular ingredient that I have on hand
+    * I should be able to scale the entire recipe based on the total mass/volume that I want to yield
 
-* As a logged in _or_ logged out user, I want to be able to view a selection of the most recent FauxTweets.
-  * When I'm on the `/fauxtweets` page:
-    * I can view the ten most recently posted FauxTweets.
-      * So that I can read and interact with the thoughts and memes of my friends.
+* As a user that updates makes mistakes frequently, I'd like to be able to edit my ingredient specifications via the same form I created them with
 
-* As a logged in _or_ logged out user, I want to be able to view a specific FauxTweet and its associated FauxComments and FauxLikes.
-  * When I'm on the `/fauxtweets/:id` page:
-    * I can view the content of the FauxTweet, as well as the associated FauxComments and FauxLikes.
-      * So that I can read and interact with the thoughts and memes of my friends, and add my own thoughts and memes in the FauxComments.
+* As a user that occasionally moves on from recipes, I'd like to be able to delete them
 
-### Updating FauxTweets
+## Procedure
 
-* As a logged in user, I want to be able to edit my FauxTweets by clicking an Edit button associated with the FauxTweet anywhere that FauxTweet appears.
-  * When I'm on the `/fauxtweets`, `/fauxtweets/:id`, or `/users/:id/fauxtweets` pages:
-    * I can click "Edit" to make permanent changes to FauxTweets I have posted.
-      * So that I can fix any errors I make in my FauxTweets.
+* As a user that is only human, I'd like to be able to optionally describe in detail the general steps required to execute a complicated dish
+    * I'd like to be able to use a large rich text field to create a procedure in as many words as I'd like
 
-### Deleting FauxTweets
+* As a user that is prone to forgetting, I'd like to be able to optionally view the procedure on the same page as the ingredients
 
-* As a logged in user, I want to be able to delete my FauxTweets by clicking a Delete button associated with the FauxTweet anywhere that FauxTweet appears.
-  * When I'm on the `/fauxtweets`, `/fauxtweets/:id`, or `/users/:id/fauxtweets` pages:
-    * I can click "Delete" to permanently delete a FauxTweet I have posted.
-      * So that when I realize I shouldn't have publicly said something, I can easily remove it.
+* As a user that makes mistakes occasionally, I'd like to be able to edit the procedure via the same rich text field
+
+* As a user that is paranoid about their secret tricks being stored online, I'd like to be able to delete the procedure
